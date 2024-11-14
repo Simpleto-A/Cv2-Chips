@@ -1,0 +1,769 @@
+A
+Absolute Value: Outputs the magnitude of the number. Is always positive.
+
+Acos: Computes the arccosine of a number.
+
+Add: Computes the sum of two or more inputs.
+
+Add Currency: Adds some amount to the Player's balance of one room currency. Configure this chip to set the affected currency.
+
+Add Tag: Adds a tag to the input object or player.
+
+Add Tags: Adds tags to the input object or player.
+
+AI Get Line of Sight Parameters: Outputs the current line of sight parameters from the input AI.
+
+AI Get Target: Outputs the current combat target of an inputted AI.
+
+AI Has Line of Sight To Target: Outputs if the input AI has line of sight to the input target.
+
+AI Look At: Command an AI to look at the input target. If you want the AI to look in a passed in vector as a direction, set the “Look Target Is Direction” parameter to True. To make an AI stop looking, use the AI Stop Looking node.
+
+AI Path To: Commands the AI to path to the input target destination.
+
+AI Rotate: Commands an AI to turn an inputted number of degrees. To command the AI to back to default rotating behavior, use the AI Stop Looking node.
+
+AI Set Line of Sight Parameters: Sets an AI’s various LoS paramters. The “Cone” setting acts like a vision cone that sits in front of AIs like eyes, where the “Circle” setting acts like a radius around the AI. The Require LoS For Targetting parameter defines if AIs can see you through walls.
+
+AI Set Pathing Speed: Sets the speed for an inputted AI. This same setting can be determined by configuring the AI itself.
+
+AI Set Patrol Point: Set an AIs Path Point.
+
+AI Set Target: Sets the input AI’s current target.
+
+AI Start Combat Behavior: RRO Quest AI black box. This node tells the input AI to start their C# defined combat behavior. Note: this behavior varies per AI.
+
+AI Stop Combat Behavior: Tells the input AI to stop its C# defined combat behavior.
+
+AI Stop Looking: Command the input AI to cancel its current Rotate and Look At commands. Call this before telling an AI to path after having it Rotate/Look At so it rotates properly while moving again.
+
+AI Variable: Variable used in the context of artificial intelligence.
+
+And: Outputs True when all inputs are True. If any input is False, it outputs False.
+
+Angular Velocity Add: Add angular velocity to an object. The Angular Velocity vector should lie along the axis of the rotation being added, with a magnitude that (once multiplied by the speed multiplier) represents the clockwise rotation speed in deg/s. Once the new angular velocity has been computed, its speed will be capped by the Max Angular Speed.
+
+Angular Velocity Set: Sets the angular velocity of an object. The Angular Velocity vector should lie along the axis of rotation, with a magnitude that (once multiplied by the speed multiplier) represents the clockwise rotation speed in deg/s.
+
+Asin: Computes the arcsine of a number.
+
+Atan: Computes the arctangent of a number.
+
+Atan2: Computes the 2-argument arctangent of a number.
+
+Audio Player Pause: Pauses audio.
+
+Audio Player Play: Plays audio.
+
+Audio Player Set Speed: Changes speed.
+
+Audio Player Set Volume: Changes volume.
+
+Audio Player Stop: Stops audio.
+
+Audio Player Time Stamp: Changes time.
+B
+Bit And: Computes a bitwise AND. The result has a bit set for every bit that is set in both of the inputs.
+
+Bit Leading Zeros: Counts the number of zeros at the beginning (most significant side) of the binary representation of an integer.
+
+Bit Nand: Computes a bitwise NAND. (NOT AND) The result has a bit set for every bit that is not set in either of the inputs.
+
+Bit Not: Computes a bitwise NOT. The result has a bit set for every bit that is not set in the input.
+
+Bit Or: Computes a bitwise OR. The result has a bit set for every bit that is set in either of the inputs.
+
+Bit Pop Count: Counts the number of set bits in the binary representation of an integer.
+
+Bit Rotate Left: Rotates digits in the binary representation of an integer to the left. As the leftmost bits fall off, they are used to fill the rightmost bits.
+
+Bit Rotate Right: Rotates digits in the binary representation of an integer to the right. As the rightmost bits fall off, they are used to fill the leftmost bits.
+
+Bit Shift Left: Shifts a value left by a number of bits. Leftmost bits are discarded, and rightmost bits are filled with zeros.
+
+Bit Shift Right: Shifts a value right by a number of bits. Rightmost bits are discarded, and leftmost bits are filled with zeros. (Logical shift)
+
+Bit Trailing Zeros: Counts the number of zeros at the end (least significant side) of the binary representation of an integer.
+
+Bit Xor: Computes a bitwise XOR. The result has a bit set for every bit that is set in exactly one of the inputs.
+
+bool Variable: Variables that can have only two possible values: true, and false.
+
+Break Tuple: Extracting its individual components or elements.
+
+Button Get Is Pressed: Outputs a target Button's Pressed property.
+
+Button Get Text: Outputs a target Button's Text property.
+
+Button Set Text: Sets an input Button's Text property.
+C
+Ceil: Returns the least integral value greater than or equal to the input value.
+
+Ceil to Int: Returns the smallest integer value greater than or equal to the input value.
+
+Circuit Board: Use as a way to encapsulate your logic. You can have as many inputs and outputs as you like. Use the Edit tool to open up the Circuit Board and add nodes inside it to encapsulate the logic. Hit done editing on your Maker Pen to leave the Circuit Board context.
+
+Clear Current Subtitle: Clears any subtitle which is currently being displayed.
+
+Collision Data Get Distance: Retrieve the distance information related to a collision.
+
+Collision Data Get Normal: Retrieve the normal vector indicating the direction of collision at a specific point.
+
+Collision Data Get Object: Obtain information about the object involved in a collision.
+
+Collision Data Get Player: Retrieve data related to the player involved in a collision.
+
+Collision Data Get Position: Get the position data associated with a collision point or object.
+
+Color Constant: Typically refers to a predefined and fixed value representing a specific color.
+
+Color to Int: Converting a color value into an integer representation.
+
+Color Variable: A storage container that holds information about a color.
+
+Combatant Get Ground Position: Outputs the ground position of an input combatant.
+
+Combatant Get Health: Outputs the Health property of the input combatant.
+
+Combatant Get Is Alive: Outputs True if the input combatant is alive.
+
+Combatant Get Velocity: Outputs the input combatant's current velocity and speed.
+
+Combatant Receive Damage: Deals damage to the given target combatant with various parameters.
+
+Combatant Set Health: Sets the Health property of an input combatant.
+
+Combatant Set Max Health: Sets the Max Health property of the input combatant.
+
+Combatant Split: Splits the input Combatant into Player and AI types. Use this off of Combatant outputs to directly access the Player or AI.
+
+Combatant Variable: A storage container that holds information about a character or entity involved in combat.
+
+Comment - aka "i": Put a comment next to your circuits to explain what they're doing.
+
+Consumable Activate: Sets the input consumable to active. Use this to confirm a consumable used event. Can also be used independently. Displays the consumable as active in the backback and decreases the number of comsumables the player owns.
+
+Consumable Constant: A predefined and fixed value representing an item in the game that can be consumed or used, typically to provide some kind of temporary effect or boost to the player character.
+
+Consumable Deactivate: Sets the input consumable to inactive. Displays the consumable as not active in the backback and allow using another one.
+
+Cos: Computes the cosine of a number.
+
+Costume Equip: Equip a Player with a costume.
+
+Costume Get Wearer: Get Player wearing a costume.
+
+Costume Unequip: Unequip a costume.
+D
+Delay: Fires outputs based on the inputted time to delay. The Run exec fires as soon as the node is executed. The After Delay exec fires once the input delay duration has completed. After Canceled fires after the delay node’s Cancel exec has been fired. Cancel cancels all current delays running from this node, except for delays scheduled for the next tick.
+
+Dice Get Player Rolled: Returns the player who rolled the dice.
+
+Dice Get Result: Returns the result of the dice.
+
+Dice Get Roll finished: Outputs an exec when the dice finished rolling.
+
+Distance: Outputs the distance between the input objects.
+
+Divide: Find how many times a value contains another.
+
+E
+Emitter Set Color: Sets the color for the particles emitted.
+
+Emitter Set Color Id: Sets the color for the particles emitted.
+
+Emitter Set Looping: Makes the emitter emit continuously or not.
+
+Emitter Set Size: Sets the size of the particles emitted.
+
+Emitter Set Speed: Sets the speed particles are emitted.
+
+Emitter Start: Starts emitting particles.
+
+Emitter Stop: Stop emitting particles.
+
+Equals: Compares the two input values and outputs True if they are the same. False if they are different.
+
+Event Definition: A description or specification of an occurrence or incident that can happen during gameplay.
+
+Event Receiver: Events are the entry points for all circuit graphs. Events are execution hooks for things like a player loading into the room, or knowing when a Button is pressed. After creating this chip, make sure to use the configure tool to choose the event you want to listen for. You can use the Event Defintion chip to create your own events to add to this list and use with the Event Sender chip.
+
+Event Sender: Use the Event Sender to fire your custom events defined in Event Defintions. After creating this chip, make sure to use the configure tool to change the event that you want to fire. You can also change who you want to send the event to from the config menu.
+
+Execution Integer Switch: Executes the associated output of the compare value that matches the 'match' input. Executes the default output if no match can be found.
+
+Execution String Switch: Executes the associated output of the compare value that matches the 'match' input. Executes the default output if no match can be found.
+
+Explosion Emitter Explode: Triggers the generation and display of an explosion effect.
+
+Explosion Emitter Get Damage: Retrieves or calculates the damage caused by an explosion emitted by an explosion emitter
+
+Explosion Emitter Get Explosion Color: Retrieves the color associated with an explosion emitted by an explosion emitter
+
+Explosion Emitter Get Explosion Radius: Retrieves the radius or distance covered by an explosion emitted by an explosion emitter.
+
+Explosion Emitter Set Damage: Sets or specifies the amount of damage that an explosion emitted by an explosion emitter will cause.
+
+Explosion Emitter Set Explosion Color: Sets or defines the color of an explosion generated by an explosion emitter.
+
+Explosion Emitter Set Explosion Radius: Sets or defines the radius or distance covered by an explosion emitted by an explosion emitter.
+F
+float Variable: Can store decimal numbers, also known as floating-point numbers.
+
+Floor: Returns the smallest integral value less than or equal to the input value.
+
+Floor to Int: Returns the smallest integer value less than or equal to the input value.
+
+For: Iterates over the "From" pin (inclusive) to the "To" pin (exclusive).
+
+For Each: Iterates over the input list. The loop exec fires for each element in the list. The Done exec fires once the end of the list has been reached.
+
+From Rec Room Object: Converts the input Rec Room Object to the object's subtype.
+
+G
+Get All Players: Outputs a list of all the players in the room currently.
+
+Get All Players With Role: Outputs List<Player> that continues every player with the specified role.
+
+Get Any Player with Role: Gets a player with the role. Returns an invalid player if no player has the role.
+
+Get Authority: Gets the authority player of the chip's current context.
+
+Get Broadcasting Attendance: Outputs player counts if you're in an event that's actively broadcasting.
+
+Get Currency Balance: Returns the local players balance of one room currency. Configure this chip to select which currency to use.
+
+Get First Tag: Gets the first tag of an object or player.
+
+Get Forward Vector: Gets the forward direction of a target and outputs it as a vector.
+
+Get Is Private Instance: Returns True if the current room instance is private.
+
+Get Local Camera Forward: Gets the direction your avatar is looking; outputs as a vector3.
+
+Get Local Camera Rotation: Gets the rotation of your avatar's view, output as a quaternion.
+
+Get Local Camera Up: Gets the up direction from the local player's camera, output as a vector3.
+
+Get Local Player: Outputs the player running this chip on their machine.
+
+Get New Line: Returns a new line string.
+
+Get Party of Player: Returns the party of the input player as List<Player>. If the player is not in a party, it will return a list containing only that player.
+
+Get Player Account Name: Outputs the player's account name (e.g., Coach) in the form of a string. To get a display name, use ToString.
+
+Get Player By Account Name: Gets a Player based on an Account Name. (E.g., my account name is @Coach, and if I input the string "Coach," the output would be my Player object.) It outputs an invalid Player if nobody in the room has the given account name.
+
+Get Player By Display Name: Gets a Player based on a display name. (E.g., my display name is Coach and if I input a string "Coach," the output would be my Player object.) It outputs an invalid Player if nobody in the room has the given display name.
+
+Get Player Season League Name: Retrieve the name of the league or season that a player is currently participating in.
+
+Get Position: Outputs the position of the input object as a vector3.
+
+Get Room Authority: Returns the player who is the room authority.
+
+Get Rotation: This outputs the rotation of the target as a quaternion.
+
+Get Tags: Outputs a list of tags the input object or player has.
+
+Get Up Vector: Outputs the up direction of the input target, output as a vector3.
+
+Get Velocity: Returns the velocity of a player or a Rec Room object.
+
+Greater or Equal: Returns true if input A is greater than or equal to input B.
+
+Greater Than: Returns True if input A is greater than input B.
+
+Ground Vehicle Add Boost Fuel: Adds boost fuel to a ground-based vehicle. 
+
+Ground Vehicle Apply Boost: Activates or applies a boost feature to a ground-based vehicle.
+
+Ground Vehicle Get Boost Fuel:The current amount of boost fuel available for a ground-based vehicle.
+
+Ground Vehicle Get Driving Enabled: Checks whether driving is currently enabled or disabled for a ground-based vehicle. 
+
+Ground Vehicle Get Engine Torque Multiplier: The current multiplier applied to the engine torque of a ground-based vehicle.
+
+Ground Vehicle Get Seated Player: Information about the player currently seated or occupying a ground-based vehicle. 
+
+Ground Vehicle Get Wheel Friction Multiplier: The current multiplier applied to the wheel friction of a ground-based vehicle. 
+
+Ground Vehicle Set Driving Enabled: Sets or changes the status of whether driving is enabled or disabled for a ground-based vehicle.
+
+Ground Vehicle Set Engine Torque Multiplier: Sets or adjusts the multiplier applied to the engine torque of a ground-based vehicle.
+
+Ground Vehicle Set Seated Player: Assigns or changes the player seated or occupying a ground-based vehicle.
+
+Ground Vehicle Set Wheel Friction Multiplier: Wheel friction affects how good the wheels are at gripping the ground; lower values decrease traction and make the wheels slip more, and higher values can increase traction and make the wheels slip less. 1 is the default value for wheel friction.
+
+Ground Vehicle Unseat Player: Removes a player from their seated position within a ground-based vehicle. 
+
+Ground Vehicle Unseat Player From Seat: This specifically removes a player from a designated seat within a ground-based vehicle.
+H
+Has Tag: Outputs True if the input object or player has the input tag.
+
+I
+If: Takes a boolean condition as an input. If True, the "Then" exec pin fires. If False, the "Else" exec pin fires.
+
+If Local Player Is Authority: I'm Authority exec fires on the player's machine who has authority in the current context. At the room level, this is room authority, inside an object board, this is object authority. I'm Not Authority exec fires for everyone else.
+
+If Local Player Is Room Authority: I'm Authority exec fires on the player's machine who has authority over the room. I'm Not Authority exec fires for everyone else.
+
+If Local Player Should Run: The "Should Run" port will exec a) if the input player is local or b) if input player is invalid and the local player has authority of the current context.
+
+If Player Is Local: Outputs if a player is the local player or not.
+
+If Value: Outputs one input value based on the input condition. Outputs the "Then" input if the input condition is True. Outputs the "Else" input if the input condition is False. Only reads one of the inputs, not both.
+
+Int to Float: Converts the input int to a float.
+
+int Variable: A type of variable that stores integer values.
+
+Interaction Volume Get Interaction Prompt: Gets the interaction prompt of an Interaction Volume.
+
+Interaction Volume Get Is Locked: Returns False if the Interaction Volume is enabled, and True if it is locked.
+
+Interaction Volume Set Interaction Prompt: Sets the interaction prompt of an Interaction Volume.
+
+Interaction Volume Set Locked: Disables or enables an Interaction Volume (but reversed).
+
+Invisible Collision Get Enabled: Outputs True if the target Invisible Collision object is enabled.
+
+Invisible Collision Set Enabled: Sets the enabled state of a target Invisible Collision object.
+
+Is Valid: Returns True if the input variable is not null. Certain variable types must be set before use because they can't have a default value. A Rec Room Object variable that isn't set isn't going to be valid.
+L
+Leaderboard Get Local Player Stat: Get leaderboard stat for local player on stat channel 1, 2 or 3.
+
+Leaderboard Set Local Player Stat: Set leaderboard stat for the local player on stat channel 1, 2 or 3.
+
+Lerp: Computes a linear interpolation.
+
+Less or Equal: Returns True if input A is less than or equal to input B.
+
+Less Than: Returns True if input A is less than input B.
+
+Light Set Angle: Sets the angle of the spotlight's cone.
+
+Light Set Color: Sets the color for a point light or a spotlight.
+
+Light Set Color Id: Sets the color for a point light or a spotlight.
+
+Light Set Intensity: Sets the brightness level for a point light or a spotlight.
+
+Light Set Range: Sets the range of a point light or a spotlight.
+
+Light Set Softness: Adjusts or sets the softness of a light source.
+
+Light Set Specular Contribution: A function or piece of code that adjusts or sets the contribution of specular highlights from a light source.
+
+Light Turn Off: Turns off the point light or the spotlight.
+
+Light Turn On: Turns on the point light or the spotlight.
+
+List Add: Adds a new element to the end of the target list containing the input value.
+
+List All True: If all of the bool values in the list are True then return true.
+
+List Any True: If any bool value in the list is True then return True.
+
+List Concat: Combine lists together into one list.
+
+List Contains: Outputs True if the target list contains the input value.
+
+List Create: Creates a list from input values. Add more inputs by using the configure tool on the node and press "Add Input". All items in a list must be of the same type.
+
+List Divide: Divides each element in the list by the next element.
+
+List Get All Indices Of: Returns list of all indices of input item in target list if that list contains one or more instances of the item. Otherwise returns an empty list.
+
+List Get Count: Outputs the number of elements inside the input list.
+
+List Get Element: Gets a specified element from the input list. The "Index" is the location of the element in the list. The first element in the list is at index 0, the second element is at index 1.
+
+List Get First Index Of: Returns first index of the item in target list if that list contains it. Otherwise returns -1.
+
+List Insert: Insert a new element into the target list at the input index. The new element contains the input value.
+
+List Max: Outputs the highest value in the target list.
+
+List Min: Outputs the lowest value in the target list.
+
+List Multiply: Multiplies each element in the list by the next element.
+
+List Remove At: Remove an element in the target list at the input index.
+
+List Remove Last: Removes the last element in a list.
+
+List Set Element: Sets a value at a location in a list.
+
+List Subtract: Subtracts each element in the list by the next element.
+
+List Sum: Adds each element in the list by the next element.
+
+List<bool> Variable: Used to store a series of conditions or flags.
+
+List<Color> Variable: Collection or list that can store elements of the "Color" type.
+
+List<float> Variable: Collection or list that can store elements of the "float" type.
+
+List<int> Variable: Collection or list that can store elements of the "int" type.
+
+List<Player> Variable: Collection or list that can store elements of the "Player" type.
+
+List<Quaternion> Variable: Collection or list that can store elements of the "Quaternion" type
+
+List<Rec Room Object> Variable: Collection or list that can store elements of the "Rec Room Object" type.
+
+List<string> Variable: Collection or list that can store elements of the "string" type
+
+List<Vector3> Variable: Collection or list that can store elements of the "Vector3" type.
+
+Log String: Logs a string to the logging tab of your palette.
+
+Logarithm: Computes a logarithm.
+M
+Make Tuple: A function that takes any input and creates a tuple containing that input.
+
+Max: Returns largest of two or more values.
+
+Min: Returns smallest of two or more values.
+
+Modulo: Outputs the remainder of the first value is divided by the second.
+
+Multiply: Multiplies the two or more input values and outputs the result.
+
+N
+Nand: Outputs False only when all inputs are True. If any input is False, it outputs True.
+
+Nor: Outputs True when all inputs are False. Otherwise, outputs False.
+
+Not: Outputs the opposite of the input boolean.
+
+O
+Or: Outputs True if any input is True. Otherwise outputs False.
+
+Overlap Sphere: Function or method that checks for overlapping objects within a spherical region in a 3D space.
+P
+Parse Bool: Converts the input string to a bool if able.
+
+Parse Float: Converts the input string to a float if able.
+
+Parse Int: Converts the input string to a integer if able.
+
+Piston Get Acceleration: Gets the acceleration of a piston.
+
+Piston Get Distance: Outputs the current distance of the target Piston.
+
+Piston Get Max Distance: Outputs the max distance of the target Piston.
+
+Piston Get Speed: Returns the speed of a piston.
+
+Piston Get Target Distance: Outputs the set distance of the Marker on a target Piston.
+
+Piston Set Acceleration: Sets the acceleration of the target Piston.
+
+Piston Set Distance: Moves the target piston to the input distance.
+
+Piston Set Max Distance: Sets the max distance of a target Piston.
+
+Piston Set Speed: Sets the speed of a target Piston.
+
+Piston Set Target Distance: Sets the Marker distance of a target Piston.
+
+Player Add Role: Adds a Role to a Player.
+
+Player Definition Board: This is very similar to an object board that you would find on any object, except this is for all players! After placing, make sure to configure it and make sure it is active. Edit into this board and add any other chips you'd like and know that each player will have the same logic on them when you hit done editing.
+
+Player Get All with Tag: Searches the room for all players with the input tag and outputs them as a list.
+
+Player Get Equipped Objects: Gets equipped objects from a player.
+
+Player Get First with Tag: Gets the first player with the input tag.
+
+Player Get Is Authority Of: Outputs if a Player is authority of the input object.
+
+Player Get Is Local: Outputs True if the input player is the local player executing the chip on their machine.
+
+Player Get Is Room Owner: Outputs True if the input Player is one of the current room's owners.
+
+Player Has Role: Outputs True if the input player has the input role.
+
+Player Left Hand Finger Direction: Outputs the direction of a Player's left hand finger.
+
+Player Left Hand Position: Outputs the postion of a Player's left hand in world space.
+
+Player Left Hand Rotation: Outputs the rotation of a Player's left hand.
+
+Player Left Hand Thumb Direction: Outputs the direction of a Player's left hand thumb.
+
+Player Left Hand Velocity: Outputs the velocity of a Player's left hand.
+
+Player Remove Role: Removes the input role from a target player.
+
+Player Right Hand Finger Direction: Outputs the direction of a Player's right hand finger.
+
+Player Right Hand Position: Outputs the postion of a Player's right hand in world space.
+
+Player Right Hand Rotation: Outputs the rotation of a Player's right hand.
+
+Player Right Hand Thumb Direction: Outputs the direction of a Player's right hand thumb.
+
+Player Right Hand Velocity: Outputs the velocity of a Player's right hand.
+
+Player Variable: Variable or data structure that stores information about a player in the game.
+
+Power: Multiplies a value by itself an input number of times.
+
+Projectile Launcher Fire Projectile: Initiates the firing or launching of a projectile from a projectile launcher.
+
+Projectile Launcher Get Hand Damage: It likely suggests that the damage value retrieved or calculated is associated with the hand or firing mechanism of the projectile launcher.
+
+Projectile Launcher Get Head Damage: Projectile launcher that retrieves or calculates the damage value associated with hitting a target's head.
+
+Projectile Launcher Get Projectile Color: Retrieves the color information associated with the projectiles it launches.
+
+Projectile Launcher Get Projectile Speed: Retrieves the speed or velocity information associated with the projectiles it launches.
+
+Projectile Launcher Get Torso Damage: Retrieves or calculates the damage value associated with hitting a target's torso.
+
+Projectile Launcher Set Hand Damage: Retrieves or calculates the damage value associated with hitting a target's torso.
+
+Projectile Launcher Set Head Damage: Sets or adjusts the damage value associated with hitting a target's head.
+
+Projectile Launcher Set Projectile Color: Sets or changes the color properties of the projectiles it launches.
+
+Projectile Launcher Set Projectile Speed: Sets or adjusts the speed or velocity properties of the projectiles it launches.
+
+Projectile Launcher Set Torso Damage: Sets or adjusts the damage value associated with hitting a target's torso.
+
+Prompt Local Player: Sends a watch notification to a player. The player which it sends a notification to depends on who's machine fires the exec pin. Once this watch notification is opened, the player can type responses into the text box and send back responses. You can define the prompt title and the prompt itself via inputs, and can also receive the player’s response via an output pin.
+
+
+Q
+Quaternion Create: Manually create a quaternion. Congratulations, you have reached peak math.
+
+Quaternion Create Angle Axis: Creates a rotation which rotates "Angle" degrees around "Axis".
+
+Quaternion Create Euler Angles: Creates a quaternion from an input Vector3.
+
+Quaternion Create From To: Creates a rotation which rotates from "From" to "To".
+
+Quaternion Create Look: Creates a rotation with the specified forward and upwards directions.
+
+Quaternion Dot: The dot product between two rotations.
+
+Quaternion Euler Angles: Outputs the input quaternion as a vector3.
+
+Quaternion Get Angle Axis: Gets the rotation which rotates angle degrees around axis.
+
+Quaternion Inverse: Outputs the Inverse of rotation.
+
+Quaternion Normalize: Outputs the input quaternion with the same rotation but with a magnitude of 1.
+
+Quaternion Rotate Towards: Rotates a rotation from "From" towards "To".
+
+Quaternion Slerp: Spherically interpolates between quaternions "Start" and "End". Progress is 0 to 1. Also a rare, but refreshing beverage.
+
+Quaternion Split: Split a quaternion into its four float components: x, y, z, and w. Congratulations, you have reached peak math.
+
+Quaternion Variable: Variable that holds a value of the Quaternion data type.
+R
+Random Float: Generates a random float from ["Min" to "Max"]. "Min" is inclusive, and "Max" is also inclusive. For example with a "Min" of 0 and a "Max" of 1, both 0 and 1 have the possibility of getting output because they are both included in the range.
+
+Random From List: Selecting a random element from a list.
+
+Random Int: Generates a random integer from ["Min" to "Max"]. "Min" is inclusive, and "Max" is also inclusive. For example with a "Min" of 0 and a "Max" of 1, 0 and 1 will have a chance of being output.
+
+Raycast: Fires an invisible ray from the "Start Position", in the "Direction" specified. Returns True if any object or player is hit within the target "Max Distance". Otherwise, returns False. You can configure the chip itself to ignore players or objects specifically.
+
+Rec Room Object Get All with Tag: Searches the room for all objects with the input tag and outputs them as a list.
+
+Rec Room Object Get Authority: Outputs the authority Player of the input object.
+
+Rec Room Object Get First with Tag: Gets the first object with the input tag.
+
+Rec Room Object Get Is Local Player Authority: Outputs True on the player's machine who has authority of the input.
+
+Rec Room Object Get Last Equipping Player: Returns the player who last held an object.
+
+Rec Room Object Reset: Resets an object.
+
+Rec Room Object Variable: Variable or data structure used to store information about an object within the Rec Room environment
+
+Remove Tag: Removes a tag from the input object or player.
+
+Remove Tags: Removes the input list of tags from the input object or player.
+
+Reroute: Used to remove spaghetti from your creations. Consumes additional CPU heat.
+
+Reset Room: Resets the Room.
+
+Respawn: Sets the position and rotation of the target player or object. Players will rotate about the vertical axis only. Will fail in the following cases: If the target object is currently held, selected/frozen by the maker pen, or is the child of a gizmo. Will also fail on players that are seated.
+
+Rotate Vector: Rotate a Vector3 with a Quaternion.
+
+Rotator Get Rotation: Outputs the rotation of a target Rotator in degrees.
+
+Rotator Get Rotation Acceleration: Outputs the acceleration of a target Rotator.
+
+Rotator Get Rotation Speed: Outputs the speed of a target Rotator.
+
+Rotator Get Target Rotation: Outputs the rotation of the Marker on the target Rotator.
+
+Rotator Set Rotation: Sets the rotation of a target Rotator.
+
+Rotator Set Rotation Acceleration: Sets the acceleration of a target Rotator.
+
+Rotator Set Rotation Speed: Sets the speed of a target Rotator.
+
+Rotator Set Target Rotation: Sets the rotation of the Marker on a target Rotator.
+
+Round: Rounds the input float to the nearest integral value.
+
+Round to Int: Rounds an input value to the nearest integer.
+
+S
+Sample Audio: Small segment or snippet of an audio recording
+
+Seat Get Seated Player: Outputs the currently seated player of a target Seat.
+
+Seat Set Lock Players In: Prevents a Seated player from unseating themselves on a target Seat. Use circuits to unseat or unlock.
+
+Seat Set Lock Players Out: Prevents players from sitting in a target seat.
+
+Seat Set Seated Player: Seats an input player on a target Seat.
+
+Seat Unseat Player: Unseats a currently seated player on a target Seat.
+
+Self:Outputs the object of the current context. For example, a self node inside a light outputs that specific light of the light type. This can only be placed inside an object board of a specific object or a player or object definition board.
+
+Set Position: Sets the position of the target player or object. Will fail in the following cases: If the target object is currently held, select/frozen by the maker pen, or is the child of a gizmo. Will also fail on players that are seated.
+
+Set Rotation: Sets the rotation of the target player or object. Players will rotate about the vertical axis only. Will fail in the following cases: If the target object is currently held, select/frozen by the maker pen, or is the child of a gizmo. Will also fail on players that are seated.
+
+Set Transform: Sets the transform (position and rotation) of the target player or object. Players will rotate about the vertical axis only. Will fail in the following cases: If the target object is currently held, select/frozen by the maker pen, or is the child of a gizmo. Will also fail on players that are seated.
+
+SFX Get Is Playing: Check whether a sound effect (SFX) is currently playing.
+
+SFX Get Volume: Outputs the volume of an SFX object.
+
+SFX Play: Plays a sound from an SFX object.
+
+SFX Set Volume: Sets the volume for an SFX object.
+
+SFX Stop: Stops the sound currently playing from an SFX object.
+
+Show Local Subtitle: Displays a subtitle for a specified duration. If there is already a subtitle showing, it will be replaced only if this subtitle has an equal or higher priority. If the string is more than 200 characters, it will be displayed in multiple subtitles, each lasting a fraction of the total duration. Escape characters are ignored.
+
+Show Notification: Prints the input notification to a player's screen if the node is run on a player's machine.
+
+Sin: Computes the sine of a number.
+
+Spawner Internal Start Spawning: Internal function or method within a spawner component or system that initiates the spawning process
+
+Spawner Reset: Resets spawner to default.
+
+Spherecast: Fires an invisible sphere of the specified Radius from the Start Position, in the Direction specified. Returns true if any object or player is hit within the target Max Distance. Otherwise, returns false. You can configure the chip itself to ignore players or objects specifically.
+
+String Contains: Outputs True if the target string contains the input value.
+
+String Format: Use this chip to combine multiple strings together into a single string output. The "Format" input is part of final string output and can include other string inputs by using this syntax: {input pin # starting at 0}. For example, a "Format" input with a default value of “Hello, {0}!” with a single additional input pin with the value "World" is fully output as "Hello, World!". If you had another input pin you would use {1} to denote the 2nd pin. You can add more string inputs by configuring the chip and pressing "Add Input".
+
+String Index Of: Outputs the index where the substring starts in the target string.
+
+String Length: Outputs the length of a target string in UTF-16 characters.
+
+String Split: Splits the target string at the input character.
+
+String Split At Index: Splits the target string in two at the input index.
+
+String Substring: Allows you to extract individual parts from a string. You can think of this like a list of characters.
+
+String To Lower: Outputs the target string in lower case.
+
+String To Upper: Outputs the target string in upper case.
+
+string Variable: Stores a sequence of characters, commonly known as a string.
+
+Subtract: Takes one input value away from the other.
+
+T
+Tan: Computes the tangent of a number.
+
+Text Get Text: Outputs the visible text for a Text object.
+
+Text Set Color: Sets the color for a Text object.
+
+Text Set Color Id: Sets the color for a Text object.
+
+Text Set Material: Sets the material for a Text object.
+
+Text Set Text: Set the visible text for a Text object.
+
+Time Get Precise Seconds: Gets the amount of seconds since a player launched Rec Room.
+
+Time Get Universal Seconds: Gets the number of seconds since 1970. Uses local player's system clock. This is not synchronized between players! This is also not guaranteed to be continuous. To measure time, use Time Get Precise Seconds instead.
+
+Time Get Universal Time: Gets the UTC time. Uses local player's system clock. This is not synchronized between players!
+
+To Combatant: Convert a player or an AI value into a Combatant value.
+
+To Rec Room Object: Casts a target specific object to a Rec Room Object.
+
+To String: Converts the input value to the string type. Example: the integer input 10 would output "10" as a string. Helpful for debugging purposes.
+
+Toggle Button Get Is Pressed: Outputs True if the toggle button is pressed.
+
+Toggle Button Set Is Pressed: Sets a Toggle Button state to pressed.
+
+Trigger Handle Get Primary Action Held: True if the primary action button is down; otherwise, False.
+
+Trigger Volume Get Filter Role: Gets the role name that is being used as a filter for a Trigger Volume.
+
+Trigger Volume Get Filter Tags: Gets the tags that are being used as a filter for a Trigger Volume.
+
+Trigger Volume Get Object Count: Gets the number of objects currently inside a Trigger Volume. This is not synchronized with the Trigger Volume's events!
+
+Trigger Volume Get Objects: Gets all of the objects currently inside a Trigger Volume. This is not synchronized with the Trigger Volume's events!
+
+Trigger Volume Get Player Count: Gets the number of players currently inside a Trigger Volume. This is not synchronized with the Trigger Volume's events!
+
+Trigger Volume Get Players: Gets all of the players currently inside a Trigger Volume. This is not synchronized with the Trigger Volume's events!
+
+Trigger Volume Set Filter Role: Sets the role name that is being used as a filter for a Trigger Volume.
+
+Trigger Volume Set Filter Tags: Sets the tags that are being used as a filter for a Trigger Volume. An object is considered by the Trigger Volume, if it has any of the tags in this list.
+
+
+
+
+V
+Value Integer Switch: Returns the associated input of the compare value that matches the 'match' input. Returns the default value if no match can be found.
+
+Value String Switch: Returns the associated input of the compare value that matches the 'match' input. Returns the default value if no match can be found.
+
+Vector Gadget Get Vector: Gets the direction and magnitude of the Vector Gadget.
+
+Vector Get Magnitude: Outputs the length of the input vector.
+
+Vector3 Create: Creates a new vector from X, Y, Z values.
+
+Vector3 Cross: The cross product of two vectors results in a third vector which is perpendicular to the two input vectors.
+
+Vector3 Dot: Computes the dot product. Commonly used to determine if the camera is facing a particular direction.
+
+Vector3 Normalize: Outputs the target vector, but its magnitude is 1.
+
+Vector3 Scale: Multiplies a vector by a scalar.
+
+Vector3 Split: Breaks the X, Y, and Z values out of the input vector.
+
+Vector3 Variable: Variable that stores a three-dimensional vector, commonly known as a Vector3
+
+Velocity Add: Adds velocity to the input target. The input velocity will be multiplied by the magnitude of the vector provided in the input direction.
+
+Velocity Reflect: The input target's velocity parallel to the input direction vector is reflected along the input direction and velocities perpendicular to it, are maintained. The input velocity will be multiplied by the magnitude of the vector provided in the input direction.
+
+Velocity Set: Momentarily sets the velocity of the input target in the input direction. The input velocity will be multiplied by the magnitude of the vector provided in the input direction.
